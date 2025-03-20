@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Fenstertitel</title>
+	<meta name="description" content="Kurzbeschreibung">
+	<link href="design.css" rel="stylesheet">
+</head>
+
+<style>
+.ueber {
+  background-color:yellow;
+}
+</style>
+
+<body>
+  <a href="https://www.html-seminar.de/befehlsuebersicht.htm">HTML-Befehle</a> x 
+  <a href="https://www.html-seminar.de/css-definitionen-uebersicht.htm">CSS-Befehle</a> x 
+  <a href="https://www.html-seminar.de/einsteiger.htm">HTML-Tutorial</a> x 
+  <a href="https://www.html-seminar.de/css-lernen.htm">CSS-Tutorial</a>
+
+  <p class="ueber">Grundgerüst<hr><img src="bilder/Grundgeruest.png"><hr></p>
+
+  <p class="ueber">Tabelle</p>
+<hr>
+<table border="1">
+  <tr>
+    <td>
+       INHALT ZELLE 1
+    </td>
+    <td>
+      INHALT ZELLE 2 
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+       INHALT ZELLE 3
+    </td>
+    <td>
+      INHALT ZELLE 4 
+    </td>
+  </tr>
+</table>
+  <hr>
+
+<p class="ueber">Liste mit Punkten</p>
+<hr>
+<ul>
+   <li>Schinken</li>
+   <li>und ganz viel Käse, also Käse Käse Käse Käse Käse Käse 
+   Käse Käse Käse Käse Käse Käse Käse Käse Käse Käse Käse Käse Käse 
+   Käse Käse und nochmals Käse</li>
+   <li>Pilze</li>
+</ul>
+<hr>
+
+<p class="ueber">Liste mit Nummern: ul durch ol ersetzen</p>
+<hr>
+
+  <p class="ueber">Auskommentierung<hr><img src="bilder/Auskommentierung.png"><hr></p>
+
+<p class="ueber">Überschriften</p>
+<hr>
+<h1>Überschriften-Ebene 1</h1>
+<h2>Überschriften-Ebene 2</h2>
+<h3>Überschriften-Ebene 3</h3>
+<h4>Überschriften-Ebene 4</h4>
+<h5>Überschriften-Ebene 5</h5>
+<h6>Überschriften-Ebene 6</h6>
+<p>normaler Text in einem Absatz ...</p>
+<hr>
+
+<p class="ueber">Nützliche Befehle in Kurzform</p>
+<hr>
+<p>p/pre Absatz/vorformatiert</p>
+<p>b (strong)/i (em)/u Text fett/kursiv/unterstrichen</p>
+<p>sup/sub Text hochgestellt/tiefgestellt</p>
+<p>br/hr Zeilenumbruch/Trennlinie</p>
+<p>div/span Bereiche markieren Block/Textteile</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<hr>
+
+<p class="ueber">Definitionsliste</p>
+<hr>
+<dl>
+  <dt>Definitionsbegriff 1</dt>
+  <dd>Definitionsbeschreibung 1</dd>
+
+  <dt>Definitionsbegriff 2</dt>
+  <dd>Definitionsbeschreibung 2</dd>
+</dl><hr>
+
+<p class="ueber">Bilder</p>
+<hr>
+<p><img src="bilder/dummy.png" width="100" height="60" 
+  alt="Logo für Dummy"
+  title="Ich bin ein Dummy">
+  <img src="bilder/rbock1.gif" title="Ich bin ein Rehbock">
+ </p>
+<p>jpg, png, gif = Formate</p>
+<p>Bild als Link:<br>
+  <a href="testseite.html">
+  <img src="bilder/dummy.jpg"
+  width="200" height="200" 
+  alt="Logo für Bildlink">
+  </a>
+</p>  
+<hr>
+
+<p class="ueber">Steuerung details/summary</p>
+<hr>
+
+<style>
+  #steuerungmitdetails {
+	border: 3px solid orange;
+}
+#steuerungmitdetails ul {
+	margin-left: 1em;
+	padding-left: 0;
+}
+#steuerungmitdetails ul ul {
+	margin-left: 1em;
+	padding-left: 1em;
+}
+#steuerungmitdetails ul li {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#steuerungmitdetails ul li li {
+	list-style-type: square;
+}
+
+#steuerungmitdetails details details {
+	background-color: #9ce43d;
+	margin-left: 1em;
+}
+</style>
+
+<nav id="steuerungmitdetails">
+  <ul>
+    <li><a href="#">Startseite</a></li>
+    <li>
+      <details>
+        <summary>Unsere Produkte</summary>
+          <details>
+            <summary>Produktkategorie A</summary>
+            <ul>
+              <li><a href="#">Produkt A1</a></li>
+              <li><a href="#">Produkt A2</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Produktkategorie B</summary>
+            <ul>
+              <li><a href="#">Produkt B1</a></li>
+              <li><a href="#">Produkt B2</a></li>
+              <li><a href="#">Produkt B3</a></li>
+            </ul>
+          </details>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Unsere Leistungen</summary>
+        <ul>
+          <li><a href="#">Leistung 1</a></li>
+          <li><a href="#">Leistung 2</a></li>
+        </ul>
+      </details>
+    </li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</nav>
+<hr>
+
+<p class="ueber">Audio</p>
+<hr>
+<audio controls>
+  <source src="musik.mp3" type="audio/mpeg">
+  <source src="musik.wav" type="audio/wav">
+  <source src="musik.ogg" type="audio/ogg">
+Sorry - Ihr Browser hat keine Unterstützung für dieses Audio-Format.
+</audio>
+<hr>
+
+<p class="ueber">Video</p>
+<hr>
+<video src="maus-maus-aus-3.ogg" width="512" height="288" 
+  poster="bilder/einemaus.jpg" controls>
+
+<div> Schade – hier käme ein Video, wenn Ihr Browser HTML5 
+Unterstützung für OGG hätte, wie z.B. der aktuelle Firefox</div>
+
+</video>
+<hr>
+
+<p class="ueber">Überschrift</p>
+<hr>
+<p>...</p>
+<hr>
+
+</body>
+</html>
+
+
