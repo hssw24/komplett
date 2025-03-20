@@ -1,0 +1,91 @@
+<style>
+
+body {
+    font-family: sans-serif;
+}
+
+textarea
+{
+    font-family: inherit;    
+}
+
+form {
+    border: 1px solid black;
+    width: 90%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+form label {
+    display: block;
+    font-size: 0.8em;
+    color: darkslategrey;
+    padding-left: 3px;    
+}
+
+input,
+textarea
+{
+    width: 100%;
+    font-size: 1.1em; 
+    padding: 4px;
+    font-family: inherit;
+    font-weight: lighter;
+    border:1px solid gray;
+    outline: none;
+    border-radius: 0.3em;
+}    
+
+input:focus,
+textarea:focus { 
+    border:1px solid orange;
+}
+
+input[type=submit] {
+    background-color: limegreen;
+    cursor: pointer;
+    width: 14em;
+    padding: .3em 0;
+    border-radius: 0.7em;
+}
+
+input[type=submit]:hover {
+    background-color: yellow;
+    box-shadow: 2px 2px 2px grey;
+}
+
+</style>
+
+<body>
+    <a href="index.html">Zurück</a> x 
+    <a href="javascript:history.back()">Zurück</a>
+    
+<h3>Design: Formulare</h3>
+
+<form>
+
+<h2>Ihre Wünsche</h2>    
+
+<p>
+<label for="Vorname">Vorname</label>
+<input type="text" id="Vorname" name="Vorname" autofocus>
+</p>
+
+<p>
+<label for="Nachname">Nachname</label>
+<input type="text" id="Nachname" name="Nachname">
+</p>
+
+<p>
+<label for="Anfrage">Ihre Anfrage</label>
+<textarea name="Anfrage" rows="6" cols="60"></textarea>
+</p>    
+
+<p>
+<input type="submit" value="absenden">   
+</p>
+
+</form>
+
+</body>
